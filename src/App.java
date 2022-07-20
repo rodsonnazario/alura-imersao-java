@@ -14,7 +14,7 @@ public class App {
         var response = client.send(request, BodyHandlers.ofString());
         var body = response.body();        
 
-        // converter o jason recebido em uma lista
+        // converter o json recebido em uma lista
         var listaDeFilmes = JsonParser.parse(body);
 
         // manipular e exibir os dados
